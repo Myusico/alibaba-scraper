@@ -20,13 +20,13 @@ Usage
 
 Functionalities
 ---
-By default, this webscraper crawls 8 items (loaded statically) on each search result page.  
-If you want to crawl 40+ items fully on each page, 
+- By default, this webscraper crawls 8 items (loaded statically) on each search result page.  
+- If you want to crawl 40+ items fully on each page, 
 replace the code in `alibaba_scraper/spiders/alibaba.py` with the code in `alibaba/spiders/alibaba_selenium.py` 
 to load dynamic content with selenium webdriver.  
-By default, this webscraper has a 1-second delay between requests 
+- By default, this webscraper has a 1-second delay between requests 
 to avoid CAPTCHA. 
 It is recommended to keep this delay for each IP even if you are using proxy.  
-The maximum speed for each IP is 8 items/second by using the delay. 
+- The maximum speed for each IP is 8 items/second by using the delay. 
 Encountering CAPTCHA will reduce the overall crawl speed.
 
